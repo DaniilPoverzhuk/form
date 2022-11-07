@@ -1,0 +1,44 @@
+.imageBlock {
+  position: relative;
+
+  &_Img {
+    img {
+      max-width: 100%;
+      min-width: 250px;
+      height: 101vh;
+    }
+  }
+
+  &_Text {
+    position: absolute;
+    bottom: 10vh;
+    transform: translate(-50%, -50%);
+    max-width: 540px;
+    width: 100%;
+    margin: 0;
+    left: 50%;
+    z-index: 10;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 55px;
+    color: #ffffff;
+  }
+}
+
+@media (max-width: 930px) {
+  .imageBlock {
+    margin-top: 5vh;
+    text-align: center;
+
+    &_Text {
+      display: none;
+    }
+
+    &_Img {
+      img {
+        max-width: 50vw;
+        height: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import "/node_modules/normalize.css/normalize.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+#root {
+  overflow: hidden;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+@media (max-width: 930px) {
+  #root {
+    overflow: auto;
+  }
+
+  .App {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}

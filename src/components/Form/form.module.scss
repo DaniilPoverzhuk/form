@@ -1,0 +1,108 @@
+@import "../../variables.scss";
+
+.form {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30vh;
+  height: 100%;
+
+  @media (max-width: 930px) {
+    margin: 10vh 0;
+  }
+
+  &_Inner {
+    max-width: 450px;
+    text-align: center;
+    margin: 0 20px;
+  }
+
+  &_Title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+
+    color: #3b3b3b;
+    margin-bottom: 5vh;
+  }
+
+  &_Inputs {
+    width: 100%;
+  }
+
+  &_Input {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    padding: 10px;
+    border: 1px solid #979797;
+    border-radius: 10px;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    &:not(:first-child) {
+      margin-top: 3.5vh;
+    }
+
+    input {
+      border: none;
+      width: 100%;
+
+      &:focus {
+        outline: none;
+      }
+
+      &::placeholder {
+        color: #979797;
+      }
+    }
+
+    label {
+      margin-right: ($widthIconLabel);
+    }
+
+    svg {
+      width: $widthIconLabel;
+      height: $widthIconLabel;
+    }
+  }
+
+  &_Info {
+    margin-top: 3.5vh;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #979797;
+
+    span {
+      color: #165e91;
+    }
+  }
+
+  &_Button {
+    width: 100%;
+    padding: 20px 0;
+
+    background: #df371e;
+    border-radius: 10px;
+    border: none;
+
+    cursor: pointer;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+
+    margin-top: 5vh;
+    transition: 0.4s;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
