@@ -44,7 +44,7 @@
     box-sizing: border-box;
 
     &:not(:first-child) {
-      margin-top: 3.5vh;
+      margin-top: 4.5vh;
     }
 
     input {
@@ -81,6 +81,14 @@
     span {
       color: #165e91;
     }
+  }
+
+  &_Error {
+    position: absolute;
+    bottom: -4vh;
+    color: red;
+    font-size: 13px;
+    font-weight: 500;
   }
 
   &_Button {
